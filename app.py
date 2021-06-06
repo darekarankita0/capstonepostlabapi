@@ -20,10 +20,13 @@ def que():
     data = pd.read_csv('Post_Lab_Questions.csv')
     que = list(data['Questions'])
     a = (random.sample(que,5))
-    listToStr = ' '.join([str(elem) for elem in a])
+    #listToStr = ' '.join([str(elem) for elem in a])
+    qs = ""
+    for (i,ele) in enumerate(a):
+        qs = qs + str(i+1)+ str(ele)
     #print(listToStr)
     data = {
-       'postlab_questions' : listToStr,
+       'postlab_questions' : qs,
     }
     data = json.dumps(data)
     return jsonify(data)
