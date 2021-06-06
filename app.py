@@ -5,15 +5,15 @@
 
 
 from flask import Flask, render_template, request, jsonify
-from flask_cors import CORS, cross_origin
+#from flask_cors import CORS, cross_origin
 import json
 import requests
 import pandas as pd
 import random
 
 app = Flask(__name__)
-cors = CORS(app)
-app.config['CORS_HEADERS'] = 'Content-Type'
+#cors = CORS(app)
+#app.config['CORS_HEADERS'] = 'Content-Type'
 
 @app.route('/', methods=['GET','POST'])
 def que():
