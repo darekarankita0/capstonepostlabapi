@@ -20,7 +20,7 @@ def que():
     data = pd.read_csv('Post_Lab_Questions.csv')
     que = list(data['Questions'])
     a = (random.sample(que,5))
-    listToStr = ' '.join([str(elem) for elem in a])
+    listToStr = ' '.join([str(elem"\\n") for elem in a])
     #print(listToStr)
     data = {
        'postlab_questions' : listToStr,
