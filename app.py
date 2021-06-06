@@ -23,7 +23,7 @@ def que():
     #listToStr = ' '.join([str(elem) for elem in a])
     qs = ""
     for (i,ele) in enumerate(a):
-        qs = qs + str(i+1)+ str(ele)
+        qs = qs + str(i+1)+ str(". ")+ str(ele) +"\n"
     #print(listToStr)
     data = {
        'postlab_questions' : qs,
