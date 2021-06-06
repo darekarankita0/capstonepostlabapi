@@ -21,7 +21,7 @@ def que():
     que = list(data['Questions'])
     a = (random.sample(que,5))
     listToStr = ' '.join([str(elem) for elem in a])
-    print("\\n")
+    print("\n")
     #print(listToStr)
     data = {
        'postlab_questions' : listToStr,
